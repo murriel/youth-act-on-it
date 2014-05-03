@@ -9,6 +9,7 @@
     "express": "3.5.1",
     "jade": "*",
     "express3-handlebars": "^0.5.0",
-    "pg": "^3.0.3"
+    "pg": "^3.0.3",
+    "restify": "2.7.0"
   }
 }

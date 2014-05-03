@@ -1,0 +1,12 @@
+<div id="main-container">
+  <ul data-role="listview">
+    {{#each object.activities}}
+    <li>
+      <a href="/details/{{activity_id}}" class="listing" data-transition="slide">
+      <h2>{{title}}</h2>
+      <p>{{description}}</p>
+      </a>
+    </li>
+    {{/each}}
+  </ul>
+</div>
