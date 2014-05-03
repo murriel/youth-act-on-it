@@ -9,16 +9,20 @@ module.exports=function(req,res) {
            '                      longitude,' +
            '                      latitude,' +
            '                      status,' +
-           '                      activity_date) ' +
-           '            values ($1,$2,$3,$4,$5,$6,$7,$8)',
+           '                      activity_date,' +
+           '                      visual_asset,' +
+           '                      target_attendance) ' +
+           '            values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10)',
            [activity.title,
             activity.description,
-            activity.create_date,
+            new Date(),
             activity.activity_location,
             activity.longitude,
             activity.latitude,
             activity.status,
-            activity.activity_date],
+            activity.activity_date,
+            activity.visual_asset,
+            activity.target_attendance],
 
   function(err,results) {
 
