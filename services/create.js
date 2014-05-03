@@ -8,15 +8,17 @@ module.exports=function(req,res) {
            '                      activity_location,' +
            '                      longitude,' +
            '                      latitude,' +
-           '                      status) ' +
-           '            values ($1,$2,$3,$4,$5,$6,$7)',
+           '                      status,' +
+           '                      activity_date) ' +
+           '            values ($1,$2,$3,$4,$5,$6,$7,$8)',
            [activity.title,
             activity.description,
             activity.create_date,
             activity.activity_location,
             activity.longitude,
             activity.latitude,
-            activity.status],
+            activity.status,
+            activity.activity_date],
 
   function(err,results) {
 
