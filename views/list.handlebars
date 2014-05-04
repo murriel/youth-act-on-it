@@ -3,9 +3,9 @@
     {{#each object.activities}}
     <li>
       <a href="/details/{{activity_id}}" class="listing" data-transition="slide">
-        <img src="http://localhost:3000/images/placeholder.jpg" width="80" height="80"/>
-        <h2>{{title}}</h2>
-        <p>{{description}}</p>
+        <img src="{{visual_asset}}" style="max-width:120px;" />
+        <h2 style="margin-left:15px">{{title}}</h2>
+        <p style="margin-left:15px">{{description}}</p>
       </a>
     </li>
     {{/each}}
