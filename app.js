@@ -13,6 +13,7 @@ var app = express();
 app.engine('handlebars',handlebars({defaultLayout:'main'}));
 app.set('views', __dirname + '/views');
 app.set('view engine', 'handlebars');
+app.use(express.bodyParser({limit: '50mb'}));
 
 // all environments
 app.set('port', process.env.PORT || config.port);
