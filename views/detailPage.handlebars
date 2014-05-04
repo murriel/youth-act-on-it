@@ -11,6 +11,9 @@
   <h2 style="margin-left:15px">{{details.title}}</h2>
   <p class="location"><strong>{{details.activity_location}}</strong></p>
   <p style="margin-left:15px">{{details.description}}</p>
-
-  <button type="button" class="btn rsvpButton">RSVP</button>
+  
+  <a href="#popupBasic" data-rel="popup" class="btn rsvpButton" data-transition="pop" style="width:100%">RSVP</a>
+	<div data-role="popup" id="popupBasic">
+	<p>Thanks for taking action!</p>
+	</div>
 </section>
