@@ -1,4 +1,5 @@
 <script src="js/create_activity.js"></script>
+<script src="js/location.js"></script>"
 <div id="main-container">
   <header data-role="header" data-position="fixed" data-theme="a">
     <h1>Youth Act On It</h1>
@@ -17,6 +18,11 @@
       
       <label for="activity_location">Location:</label>
       <input type="text" id="activity_location" name="activity_location">
+      <button type="button" name="getLocation" id="getLocation" class="btn btn-default">Get Location</button>
+
+      <label for="activity_picture">Picture:</label>
+      <input type="text" id="activity_picture" name="activity_picture">
+      <button type="button" name="acquirePicture" id="activityPicture" class="btn btn-default">Acquire Picture</button>
 
       <button name="btnSubmit" id="btnSubmit" class="ui-btn-hidden" aria-disabled="false">Submit</button>
     

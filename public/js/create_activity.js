@@ -17,4 +17,15 @@ $(document).ready(function(){
 			}
 		});
 	});
+
+	$("#getLocation").click(function(){
+        navigator.geolocation.getCurrentPosition(function(pos){
+            $("#activity_location").val(pos.coords.latitude + ',' + pos.coords.longitude);
+        },
+        function(){
+            $("#activity_location").val("Location cannot be found");
+        });
+    });
 });
+
+
