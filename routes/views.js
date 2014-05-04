@@ -23,6 +23,10 @@ module.exports=function(app) {
     });
   });
 
+  app.get('/create', function(req,response) {
+    response.render('createActivity');
+  });
+
   app.get('/list', function(req,response) {
       client.get('/activity/list', function(err, req, res, obj){
         response.render('list', { object: obj});

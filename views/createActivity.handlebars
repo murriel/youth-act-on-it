@@ -1,0 +1,25 @@
+<div id="main-container">
+  <header data-role="header" data-position="fixed" data-theme="a">
+    <h1>Youth Act On It</h1>
+     <a href="/list" data-icon="back" data-rel="back" data-iconpos="notext" data-transition="slide" data-direction="reverse"></a>
+  </header>
+  <div id="activityForm">
+    <form action="/activity/create" method="post" id="activityForm">
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Title</label>
+        <input type="title" class="form-control" id="exampleInputEmail1" placeholder="Enter title">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Description</label>
+        <textarea type="description" class="form-control" id="exampleInputEmail1" placeholder="Enter description"></textarea>
+      </div>
+
+      <label for="basic">Date:</label>
+      <input type="text" data-role="date">
+
+      <button type="submit" name="submit" class="ui-btn-hidden" aria-disabled="false">Submit</button>
+    </form>
+  </div>
+</div>

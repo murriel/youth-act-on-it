@@ -18,3 +18,17 @@
   margin-left:15px;
   font-size: 13px;
 }
+
+#activityForm{
+  padding: 10px;
+}
+
+.rsvpButton {
+  background-color: #d9534f !important;
+  color: #fff !important;
+}
+
+#homepage {
+  height: 50px;
+  line-height: 40px;
+}
