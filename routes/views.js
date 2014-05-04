@@ -30,7 +30,24 @@ module.exports=function(app) {
 
   app.get('/list', function(req,response) {
       client.get('/activity/list', function(err, req, res, obj){
-        response.render('list', { object: obj});
+        response.render('list', { object: obj,
+        	helpers: {
+        		"prettifyDate": function(timestamp) {
+        			return new Date(timestamp).toString('yyyy-MM-dd');
+        		}
+        	}
+        	});
       });
   });
 };
+
+//app.get('/', function (req, res, next) {
+//    res.render('home', {
+//        showTitle: true,
+//
+//        // Override `foo` helper only for this rendering.
+//        helpers: {
+//            foo: function () { return 'foo.'; }
+//        }
+//    });
+//});
