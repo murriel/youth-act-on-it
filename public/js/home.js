@@ -1,5 +1,5 @@
 $(document).ready(function() {
 //    setTimeout(function(){
-	    	$("#homeLogoLink").click();	
+//	    	$("#homeLogoLink").click();	
 //    },2000);
 });
