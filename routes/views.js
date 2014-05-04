@@ -1,8 +1,9 @@
 var restify = require('restify'),
-    moment = require('moment');
+    moment = require('moment'),
+    config = require('../config');
 
 var client = restify.createJsonClient({
-  url: 'http://localhost:3000',
+    url: config.rest_url,
 });
 
 module.exports=function(app) {
