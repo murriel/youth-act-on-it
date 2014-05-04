@@ -40,3 +40,9 @@
     width: 80%;
 	max-width: 723px;
 }
+
+.details-image-thumb{
+	width:80%;
+	min-width:180px;
+	max-width:300px;
+}
