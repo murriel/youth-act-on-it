@@ -1,5 +1,5 @@
 var restify = require('restify'),
-    async = require('async');
+    moment = require('moment');
 
 var client = restify.createJsonClient({
   url: 'http://localhost:3000',
