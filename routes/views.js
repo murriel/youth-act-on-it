@@ -16,9 +16,11 @@ module.exports=function(app) {
        res.render('home');
   });
 
-  app.get('/details/:id', function(req,res) {
-      console.log(req.params.id);
-      res.render('detailPage');
+  app.get('/details/:id', function(req,response) {
+    var x = '/activity/details/' + req.params.id;
+    client.get(x, function(err, req, res, obj){
+      response.render('detailPage', { details: obj});
+    });
   });
 
   app.get('/list', function(req,response) {

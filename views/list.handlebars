@@ -1,10 +1,11 @@
 <div id="main-container">
-  <ul data-role="listview">
+  <ul data-role="listview" data-inset="true" data-split-icon="gear" data-split-theme="a">
     {{#each object.activities}}
     <li>
       <a href="/details/{{activity_id}}" class="listing" data-transition="slide">
-      <h2>{{title}}</h2>
-      <p>{{description}}</p>
+        <img src="http://localhost:3000/images/placeholder.jpg" width="80" height="80"/>
+        <h2>{{title}}</h2>
+        <p>{{description}}</p>
       </a>
     </li>
     {{/each}}
