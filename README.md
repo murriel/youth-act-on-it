@@ -1,5 +1,7 @@
-Youth Act on It 
+Youth Act on It
+
 www.YouthActOnIt.org
+
 www.twitter.com/YouthActOnIt
 
 "Saving the world, one act at a time" 
